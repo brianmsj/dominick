@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Whistle from './whistle.svg'
 
 class Nav extends React.Component {
     constructor(props) {
@@ -10,12 +10,16 @@ class Nav extends React.Component {
     render() {
 
         return (
-        <div>
+        <div className='nav-banner'>
           <div className='main-logo'>
-            <img src='whistle.png' />
-            <h3>Coding</h3>
-            <h3>Bootcamp</h3>
-            <h2>Coach</h2>
+            <div className='main-logo-img'>
+            <img src={Whistle} />
+            </div>
+            <div className='main-logo-text-container'>
+            <h3 className='main-logo-text'>Coding</h3>
+            <h3 className='main-logo-text'>Bootcamp</h3>
+            <h2 className='main-logo-text'>Coach</h2>
+            </div>
           </div>
           <div className='nav-head-bar'>
             <li className='nav-link'>About</li>
