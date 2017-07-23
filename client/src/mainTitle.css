@@ -7,11 +7,10 @@
   text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-
 }
 
 .main-title {
-  font-size: 50px;
+  font-size: 56px;
   font-family: 'Montserrat',tahoma,verdana,arial,sans-serif;
   font-weight: bolder;
   align-items: center;
@@ -19,5 +18,26 @@
   text-shadow: black 0.05em 0.05em 0.05em;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.main-title-box {
+  margin-top: 90px;
+}
+.program-info {
+  background-color:#333333;
+}
 
+@media all and (max-width: 600px) {
+  .main-title {
+    font-size: 46px;
+  }
+  .main-title-container{
+    position: fixed;
+    height: 390px;
+  }
+  .nav-ribbon {
+    height: 30px;
+  }
+  .nav-link {
+    margin-left:12px;
+  }
 }

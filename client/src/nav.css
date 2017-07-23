@@ -6,7 +6,7 @@
 }
 .nav-head-bar {
   display: inline-block;
-  border: 2px solid red;
+
 }
 .nav-banner {
   background-color: #333333;
@@ -14,7 +14,7 @@
 }
 .main-logo {
   display: inline-block;
-  border: 2px solid blue;
+
 }
 .main-logo-text-container {
   display: inline-block;
@@ -29,5 +29,7 @@
 .main-logo-text {
   margin-bottom: 0px;
   margin-top: 5px;
-
+}
+.nav-ribbon {
+  background-color:#f15b2a;
 }
