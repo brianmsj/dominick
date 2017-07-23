@@ -1,9 +1,7 @@
 import React from 'react';
-import Nav from './nav';
-import Title from './main-title';
 
 
-class App extends React.Component {
+class Title extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -12,12 +10,11 @@ class App extends React.Component {
     render() {
 
         return (
-        <div>
-         <Nav />
-         <Title />
+        <div className='main-title-container row'>
+          <p> Hello Krystle How Are You </p>
         </div>
       )
     }
 }
 
-export default App;
+export default Title;

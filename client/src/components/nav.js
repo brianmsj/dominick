@@ -19,7 +19,7 @@ class Nav extends React.Component {
             <h3 className='main-logo-text'>Coding</h3>
             <h3 className='main-logo-text'>Bootcamp</h3>
             <h2 className='main-logo-text'>Coach</h2>
-            </div>
+          </div>
           </div>
           <div className='nav-head-bar'>
             <li className='nav-link'>ABOUT</li>
