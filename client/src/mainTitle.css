@@ -25,19 +25,27 @@
 .program-info {
   background-color:#333333;
 }
+.program-text {
+  padding-left: 7px;
+  padding-right: 7px;
+  text-align: center;
+}
 
 @media all and (max-width: 600px) {
   .main-title {
     font-size: 46px;
   }
   .main-title-container{
-    position: fixed;
     height: 390px;
+    margin-top: -90px;
   }
   .nav-ribbon {
     height: 30px;
   }
   .nav-link {
     margin-left:12px;
+  }
+  .row {
+    padding-top: 0;
   }
 }
