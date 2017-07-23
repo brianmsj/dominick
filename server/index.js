@@ -1,7 +1,6 @@
 const path = require('path');
 const express = require('express');
 const passport = require('passport');
-const secret = require('./secret');
 
 const app = express();
 

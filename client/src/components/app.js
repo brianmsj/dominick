@@ -1,5 +1,6 @@
 import React from 'react';
-import * as Cookies from 'js-cookie';
+import Nav from './nav';
+
 
 class App extends React.Component {
     constructor(props) {
@@ -9,8 +10,11 @@ class App extends React.Component {
     }
     render() {
 
-        return
-        <div> This is the app page</div>
+        return (
+        <div>
+         <Nav />
+        </div>
+      )
     }
 }
 
