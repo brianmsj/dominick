@@ -1,7 +1,13 @@
 
 .main-title-container {
-  background-color: grey;
-  border: 2px solid green;
+  height: 350px;
+  position: relative;
+  background-image: url('http://www.justintelligent.com/img/webdevelopmentcover.jpg');
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
 }
 
 .main-title {

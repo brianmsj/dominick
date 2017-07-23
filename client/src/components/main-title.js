@@ -14,8 +14,8 @@ class Title extends React.Component {
          <div className='main-title-box'>
           <p className='main-title'>ATTENDED A CODING BOOTCAMP?</p>
           <p className='main-title'>CANT FIND A JOB?</p>
-        </div>
-        </div>
+        </div> 
+       </div>
       )
     }
 }
