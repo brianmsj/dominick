@@ -22,10 +22,10 @@ class Nav extends React.Component {
             </div>
           </div>
           <div className='nav-head-bar'>
-            <li className='nav-link'>About</li>
-            <li className='nav-link'>Program</li>
-            <li className='nav-link'>Articles</li>
-            <li className='nav-link'>Resources</li>
+            <li className='nav-link'>ABOUT</li>
+            <li className='nav-link'>PROGRAM</li>
+            <li className='nav-link'>ARTICLES</li>
+            <li className='nav-link'>RESOURCES</li>
           </div>
         </div>
       )
