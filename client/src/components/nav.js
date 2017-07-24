@@ -1,5 +1,6 @@
 import React from 'react';
 import Whistle from './whistle.svg'
+import {Link} from 'react-router-dom'
 
 class Nav extends React.Component {
     constructor(props) {
@@ -22,8 +23,9 @@ class Nav extends React.Component {
           </div>
           </div>
           <div className='nav-head-bar'>
+            <Link to={'/'}><li className='nav-link'>HOME</li></Link>
             <li className='nav-link'>ABOUT</li>
-            <li className='nav-link'>PROGRAM</li>
+            <Link to={'/program'}><li className='nav-link'>PROGRAM</li></Link>
             <li className='nav-link'>ARTICLES</li>
             <li className='nav-link'>RESOURCES</li>
           </div>

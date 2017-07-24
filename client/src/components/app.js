@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from './nav';
 import Title from './main-title';
 import ProgramInfo from './programinfo';
 
@@ -14,7 +13,6 @@ class App extends React.Component {
 
         return (
         <div>
-         <Nav />
          <div className='nav-ribbon row'>
          </div>
          <Title />

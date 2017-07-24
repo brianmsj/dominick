@@ -20,7 +20,7 @@
   margin-bottom: 0px;
 }
 .main-title-box {
-  margin-top: 90px;
+  margin-top: 70px;
 }
 .program-info {
   background-color:#333333;
@@ -35,14 +35,28 @@
   color: white;
   font-family: 'Montserrat',sans-serif;
 }
-
+.slogan-info.col-11 {
+  background-color: #333333;
+  box-shadow: none;
+  text-align: center;
+}
+.slogan-guarantee {
+  font-size: 38px;
+  font-family: 'Montserrat',tahoma,verdana,arial,sans-serif;
+  color: white;
+}
+.btn.btn-primary {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Montserrat',tahoma,verdana,arial,sans-serif;
+}
 @media all and (max-width: 600px) {
   .main-title {
     font-size: 46px;
   }
   .main-title-container{
     height: 390px;
-    margin-top: -90px;
+    margin-top: -20px;
   }
   .nav-ribbon {
     height: 30px;

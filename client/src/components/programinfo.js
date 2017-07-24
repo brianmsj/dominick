@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 
 class ProgramInfo extends React.Component {
@@ -11,6 +12,10 @@ class ProgramInfo extends React.Component {
 
         return (
         <div className='program-info row'>
+          <div className='slogan-info col-11'>
+            <p className='slogan-guarantee'>Our program will get you a job as a Developer, guaranteed.</p>
+            <Link to={'/program'}><button className='btn btn-primary'>Learn More Here</button></Link>
+          </div>
           <div className='program-info-container col-5'>
            <p className='program-text'>In 2012, only 2,000 students graduated from coding bootcamps. In 2017, over 20,000 student graduated from coding bootcamps.
            The competition is stronger than ever and face it, bootcamps are better at teaching students coding rather than finding a job.
