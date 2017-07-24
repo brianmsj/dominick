@@ -11,12 +11,14 @@ import './mainTitle.css';
 import ProgramInfo from './components/programinfo';
 import Nav from './components/nav';
 import Program from './components/program';
+import About from './components/about';
 
 ReactDOM.render(
   <BrowserRouter>
    <div>
     <Nav />
     <Switch>
+     <Route path='/about' component={About}/>
      <Route path='/program' component={Program}/>
      <Route path='/' component={App}/>
     </Switch>

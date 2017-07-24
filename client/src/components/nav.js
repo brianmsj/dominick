@@ -24,7 +24,7 @@ class Nav extends React.Component {
           </div>
           <div className='nav-head-bar'>
             <Link to={'/'}><li className='nav-link'>HOME</li></Link>
-            <li className='nav-link'>ABOUT</li>
+            <Link to={'/about'}><li className='nav-link'>ABOUT</li></Link>
             <Link to={'/program'}><li className='nav-link'>PROGRAM</li></Link>
             <li className='nav-link'>ARTICLES</li>
             <li className='nav-link'>RESOURCES</li>
