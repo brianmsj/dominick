@@ -26,9 +26,14 @@
   background-color:#333333;
 }
 .program-text {
-  padding-left: 7px;
+  padding-left: 15px;
   padding-right: 7px;
-  text-align: center;
+  text-align: left;
+}
+.program-info-container.col-5 {
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat',sans-serif;
 }
 
 @media all and (max-width: 600px) {
