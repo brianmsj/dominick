@@ -8,10 +8,12 @@ import './index.css';
 import './nav.css';
 import './grid.css';
 import './mainTitle.css';
+import './footer.css';
 import ProgramInfo from './components/programinfo';
 import Nav from './components/nav';
 import Program from './components/program';
 import About from './components/about';
+import Footer from './components/footer'
 
 ReactDOM.render(
   <BrowserRouter>
@@ -22,6 +24,7 @@ ReactDOM.render(
      <Route path='/program' component={Program}/>
      <Route path='/' component={App}/>
     </Switch>
+    <Footer />
    </div>
    </BrowserRouter>,
   document.getElementById('root')

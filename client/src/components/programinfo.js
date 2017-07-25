@@ -13,7 +13,7 @@ class ProgramInfo extends React.Component {
         return (
         <div className='program-info row'>
           <div className='slogan-info col-11'>
-            <p className='slogan-guarantee'>Our program will get you a job as a Developer, guaranteed.</p>
+            <p className='slogan-guarantee'>Our career program will get you a job as a Developer, guaranteed.</p>
             <Link to={'/program'}><button className='btn btn-primary'>Learn More Here</button></Link>
           </div>
           <div className='program-info-container col-5'>
