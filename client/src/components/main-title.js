@@ -12,8 +12,8 @@ class Title extends React.Component {
         return (
         <div className='main-title-container row'>
          <div className='main-title-box'>
-          <p className='main-title'>ATTENDED A CODING BOOTCAMP ?</p>
-          <p className='main-title'>CANT FIND A JOB ?</p>
+          <p className='main-title'>IM DOMINICK MCMINN</p>
+          <p className='main-title'>WELCOME TO MY LEGO SITE</p>
         </div>
        </div>
       )
