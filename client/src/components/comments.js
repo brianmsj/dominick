@@ -33,11 +33,11 @@ class Comments extends React.Component {
            <p className='aux-pic-text'>Like my Lego Site? Comment here on what you like</p>
           </div>
           <div className='comment-form col-11'>
-           <form onSubmit={this.onSubmit} ref={ref => this.answerForm = ref}>>
+           <form onSubmit={this.onSubmit} ref={ref => this.answerForm = ref}>
             <input ref={ref => this.name = ref} className='top-two-input' placeholder='please enter name here'></input>
             <input ref={ref => this.date = ref} className='top-two-input' type='date'></input>
             <textarea ref={ref => this.comment = ref} placeholder='submit comments about the site here' className='comment-text-box'></textarea>
-            <button className='comment-form-submit'>Submit Comment</button>
+            <button className='comment-form-submit btn btn-primary'>Submit Comment</button>
             </form>
           </div>
           </div>
