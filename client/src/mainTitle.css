@@ -87,9 +87,13 @@
   text-align: center;
 }
 .comment-form.col-11 {
-  background-color: #f15b2a;
+  position: relative;
+  background-image: url('https://www.bidpal.com/wordpress/wp-content/uploads/2015/11/lego-background.png');
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   box-shadow: none;
-  color: white;
 }
 .comment-text-box,.comment-form-submit {
   display: block;
@@ -108,11 +112,31 @@
   border-radius: 5px;
   font-size: 20px;
 }
+.comment-title {
+  margin-top:5px;
+}
+.comment-text {
+  font-size: 20px;
+}
+.comment-date {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 .comment-form-submit {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
+.comment-individual.col-11 {
+  background: #f15b2a;
+  color: white;
+}
+.main-image-dom-container.three {
+  height: 200px;
+  width: 400px;
+  margin: auto;
+}
+.aux-pic-text.antman {
+}
 @media all and (max-width: 690px) {
   .main-title {
     font-size: 46px;
@@ -133,6 +157,10 @@
   .comment-text-box {
     width: 400px;
   }
+}
+.main-image-dom-container.about {
+  height: 500px;
+  width: 800px;
 }
 @media all and (max-width: 424px) {
   .comment-text-box{

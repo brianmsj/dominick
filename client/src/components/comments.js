@@ -27,6 +27,15 @@ class Comments extends React.Component {
     }
     render() {
         console.log(this.props.posts)
+        const comments = this.props.posts.map(function(comment,index) {
+          return(
+          <div className='comment-individual col-11' key={index}>
+          <h2 className='comment-title'>{comment.name}</h2>
+          <p className='comment-date'>{comment.date}</p>
+          <p className='comment-text'>{comment.comment}</p>
+          </div>
+        )
+        })
         return (
           <div className='program-info row'>
           <div className='aux-pic-text col-11'>
@@ -39,6 +48,9 @@ class Comments extends React.Component {
             <textarea ref={ref => this.comment = ref} placeholder='submit comments about the site here' className='comment-text-box'></textarea>
             <button className='comment-form-submit btn btn-primary'>Submit Comment</button>
             </form>
+          </div>
+          <div className='cards-container row'>
+           {comments}
           </div>
           </div>
       )
