@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from './main-title';
 import ProgramInfo from './programinfo';
+import Comments from './comments';
 
 
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
          <div className='nav-ribbon row'>
          </div>
          <ProgramInfo />
+         <Comments />
         </div>
       )
     }

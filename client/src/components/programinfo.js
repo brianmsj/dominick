@@ -1,6 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import LegoLand from './dominick_lego.jpg'
+import LexLuthor from './Lexlb2.jpg'
+import Batman from './batman.jpg'
+import SpiderMan from './spider_man.jpg'
+import LexArmor from './power_armor_lex.jpg'
 
 
 class ProgramInfo extends React.Component {
@@ -18,7 +22,27 @@ class ProgramInfo extends React.Component {
             <div className='main-image-dom-container'>
             <img className='main-image-dom' src={LegoLand}/>
             </div>
-            <a href='http://www.legoland.com'><button className='btn btn-primary'>Learn more about Legoland here!</button></a>
+            <a href='http://www.legoland.com'><button className='btn btn-primary main-legoland-link'>Learn more about Legoland here!</button></a>
+          </div>
+          <div className='slogan-info col-11'>
+          <p className='slogan-guarantee'>My favorite Superhero Lego is Lex Luthor</p>
+          <div className='main-image-dom-container'>
+            <img className='main-image-dom' src={LexLuthor}/>
+          </div>
+          <div className='other-fav-container'>
+            <div className='aux-pic'>
+            <p className='aux-pic-text'>I love Batman</p>
+            <img className='aux-pic-image' src={Batman}/>
+            </div>
+            <div className='aux-pic'>
+            <p className='aux-pic-text'>Spider man is awesome!</p>
+            <img className='aux-pic-image' src={SpiderMan}/>
+            </div>
+            <div className='aux-pic'>
+            <p className='aux-pic-text'>Lex Armor is so cool!</p>
+            <img className='aux-pic-image' src={LexArmor} />
+            </div>
+          </div>
           </div>
         </div>
       )

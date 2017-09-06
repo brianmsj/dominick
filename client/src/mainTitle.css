@@ -59,6 +59,51 @@
   height: 100%;
   width: 100%;
 }
+.main-legoland-link {
+  margin-top:20px;
+}
+.aux-pic {
+  display: inline-block;
+  margin-left: 40px;
+  margin-bottom: 60px;
+  margin-top: 50px;
+  height: 300px;
+  width: 300px;
+}
+.aux-pic-image {
+  height: 100%;
+  width: 100%;
+}
+.aux-pic-text {
+  color: white;
+  font-size: 26px;
+}
+.other-fav-container {
+  margin: auto;
+}
+.aux-pic-text.col-11 {
+  background-color: #333333;
+  box-shadow: none;
+  text-align: center;
+}
+.comment-form.col-11 {
+  background-color: #333333;
+  box-shadow: none;
+  text-align: center;
+  color: white;
+}
+.comment-text-box,.comment-form-submit {
+  display: block;
+  margin: auto;
+}
+.comment-text-box {
+  width: 500px;
+}
+.top-two-input {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
 @media all and (max-width: 600px) {
   .main-title {
     font-size: 46px;

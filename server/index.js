@@ -1,13 +1,54 @@
 const path = require('path');
 const express = require('express');
-const passport = require('passport');
+const session = require('express-session');
+const bodyParser = require('body-parser');
+const http = require('http');
+const mongoose = require('mongoose');
+const Comment = require('./models/comments');
 
-const app = express();
 
-const database = {
+mongoose.Promise = global.Promise
+let secret = {
+  DATABASE_URL: process.env.DATABASE_URL
 };
 
-app.use(passport.initialize());
+if(process.env.NODE_ENV != 'production') {
+  secret = require('./secret');
+}
+global.secret = secret
+
+
+
+
+const app = express();
+app.use(bodyParser.json());
+
+app.post('/api/comment', (req,res) => {
+  const commentDetails = {
+    name: req.body.name,
+    date: req.body.date,
+    comment: req.body.comment
+  }
+  Comment.create(commentDetails)
+  .then(data => {
+    res.status(201).json(data);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json({message: 'internal server error'});
+  })
+});
+app.get('/api/comment', (req,res) => {
+  Comment
+  .find()
+  .exec()
+  .then(listings => {
+    res.json(listings);
+  })
+  .catch(err=> {
+    res.status(500).json({error: 'Something Went Wrong'})
+  })
+})
 
 // Serve the built client
 app.use(express.static(path.resolve(__dirname, '../client/build')));
@@ -22,9 +63,15 @@ app.get(/^(?!\/api(\/|$))/, (req, res) => {
 let server;
 function runServer(port=3001) {
     return new Promise((resolve, reject) => {
-        server = app.listen(port, () => {
-            resolve();
-        }).on('error', reject);
+        mongoose.connect(secret.DATABASE_URL || process.env.DATABASE_URL, err => {
+            if(err) {
+              return reject(err);
+            }
+            console.log("Db Connected");
+            server = app.listen(port, () => {
+              resolve();
+            }).on('error', reject);
+        });
     });
 }
 
@@ -44,5 +91,5 @@ if (require.main === module) {
 }
 
 module.exports = {
-    app, runServer, closeServer
+    app, runServer, closeServer, secret
 };
