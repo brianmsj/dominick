@@ -25,7 +25,7 @@ class ProgramInfo extends React.Component {
             <a href='http://www.legoland.com'><button className='btn btn-primary main-legoland-link'>Learn more about Legoland here!</button></a>
           </div>
           <div className='slogan-info col-11'>
-          <p className='slogan-guarantee'>My favorite Superhero Lego is Lex Luthor</p>
+          <p className='slogan-guarantee'>My favorite Villain Lego is Lex Luthor</p>
           <div className='main-image-dom-container'>
             <img className='main-image-dom' src={LexLuthor}/>
           </div>
