@@ -12,6 +12,8 @@ class Comments extends React.Component {
         };
         this.onSubmit = this.onSubmit.bind(this);
     }
+    onChange(event) {
+    }
     onSubmit(event) {
       event.preventDefault();
       var item = {
