@@ -5,6 +5,7 @@ import LexLuthor from './Lexlb2.jpg'
 import Batman from './batman.jpg'
 import SpiderMan from './spider_man.jpg'
 import LexArmor from './power_armor_lex.jpg'
+import WaterFireGuy from './waterguyvsfireguy.jpg'
 
 
 class ProgramInfo extends React.Component {
@@ -28,6 +29,11 @@ class ProgramInfo extends React.Component {
           <p className='slogan-guarantee'>My favorite Villain Lego is Lex Luthor</p>
           <div className='main-image-dom-container'>
             <img className='main-image-dom' src={LexLuthor}/>
+          </div>
+          <div className='slogan-info col-11'>
+          <p className='slogan-guarantee'>This is my fire guy water guy lego</p>
+          <div className='main-image-dom-container'>
+            <img className='main-image-dom' src={WaterFireGuy}/>
           </div>
           <div className='other-fav-container'>
             <div className='aux-pic'>
