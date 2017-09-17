@@ -6,6 +6,7 @@ class Nav extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+        
         };
     }
     render() {
@@ -17,6 +18,8 @@ class Nav extends React.Component {
             <Link to={'/about'}><li className='nav-link'>ABOUT</li></Link>
             <Link to={'/program'}><li className='nav-link'>LEGO PICTURES</li></Link>
           </div>
+            <div>
+            </div>
         </div>
       )
     }
