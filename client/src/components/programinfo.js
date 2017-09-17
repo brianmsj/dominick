@@ -35,6 +35,7 @@ class ProgramInfo extends React.Component {
           <div className='main-image-dom-container'>
             <img className='main-image-dom' src={WaterFireGuy}/>
           </div>
+          </div>
           <div className='other-fav-container'>
             <div className='aux-pic'>
             <p className='aux-pic-text'>I love Batman</p>
