@@ -17,7 +17,9 @@ if(process.env.NODE_ENV != 'production') {
 }
 global.secret = secret
 
-
+function(sendmail) {
+  mailto: object
+}
 
 
 const app = express();
