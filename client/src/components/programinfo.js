@@ -39,7 +39,7 @@ class ProgramInfo extends React.Component {
           </div>
           </div>
           <div className='slogan-info col-11'>
-          <p className='slogan-guarantee'>Check out Chewbacca! My dad took this picture of me.</p>
+          <p className='slogan-guarantee'>Check out Chewbacca! My dad took this picture for me. Thanks Dad!</p>
           <div className='main-image-dom-container'>
             <img className='main-image-dom' src={Chewbacca}/>
           </div>
