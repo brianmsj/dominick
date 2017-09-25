@@ -17,9 +17,6 @@ if(process.env.NODE_ENV != 'production') {
 }
 global.secret = secret
 
-
-
-
 const app = express();
 app.use(bodyParser.json());
 

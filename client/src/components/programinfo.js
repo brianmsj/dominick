@@ -7,6 +7,7 @@ import SpiderMan from './spider_man.jpg'
 import LexArmor from './power_armor_lex.jpg'
 import WaterFireGuy from './waterguyvsfireguy.jpg'
 import LegendaryLego from './legendarylego.jpg'
+import Chewbacca from './chewbacca.jpg'
 
 
 class ProgramInfo extends React.Component {
@@ -35,6 +36,12 @@ class ProgramInfo extends React.Component {
           <p className='slogan-guarantee'>This is my fire guy water guy lego</p>
           <div className='main-image-dom-container'>
             <img className='main-image-dom' src={WaterFireGuy}/>
+          </div>
+          </div>
+          <div className='slogan-info col-11'>
+          <p className='slogan-guarantee'>Check out Chewbacca! My dad took this picture of me.</p>
+          <div className='main-image-dom-container'>
+            <img className='main-image-dom' src={Chewbacca}/>
           </div>
           </div>
           <div className='slogan-info col-11'>
